@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: Consolas;
-    src: url(fonts/consolas.ttf);
+    src: url(../fonts/consolas.ttf);
 }
 
 .head{
@@ -41,14 +41,29 @@
 }
 
 
+.inf__list-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+}
 
+.inf__list-block:hover > .inf__list-line{
+    animation-name: header__list-animation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+}
 
-/* Шрифт Consolas применён ко всему документу (см. самую верхнюю строку) */
+.inf__list-line{
+    height: 2px;
+    background-color: white;
+}
 
-/* Размер элемента "Сайт-портфолио" в intro задан через тег <style> в HTML */
-
-
-
+@keyframes header__list-animation {
+    from {width: 0%;}
+    to {width: 100%;}
+}
 
 .intro{
     width: 1920px;
@@ -70,12 +85,18 @@
 
 .intro__console{
     animation-name: intro__console-animation;
-    animation-duration: 0.5s;
+    animation-duration: 0.75s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 .intro__logo{
+    animation: intro__logo-start;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-in-out;
+
     transition: 1s;
     transition-delay: 0.1s;
     transition-timing-function: ease-in-out;
@@ -86,8 +107,13 @@
 }
 
 @keyframes intro__console-animation {
-    from {color: gray;}
-    to {color: black;}
+    from {color: rgb(167, 167, 167);}
+    to {color: rgb(46, 46, 46);}
+}
+
+@keyframes intro__logo-start {
+    from {scale: 125%;}
+    to {scale: 100%;}
 }
 
 .about{
@@ -95,16 +121,29 @@
     width: 1922px;
     height: 1912.02;
     background-image: url(../img/about_bg.png);
+    background-color: black;
+}
+
+.about__header{
+    display: flex;
+    justify-content: center;
+    padding: 5vh 0vw 15vh 0vw;
+    font-size: 36px;
 }
 
 .about__person{
     margin: 0vw 15vw 0vw 15vw;
     justify-content: space-around;
     display: flex;
+    gap: 10vw;
 }
 
 .about__block{
     rotate: -5deg;
+}
+
+.about__block2{
+    rotate: 7deg;
 }
 
 .about__block-header{
@@ -118,9 +157,54 @@
 
 .about__block-image{
     border: 5px solid black;
-    box-sizing: border-box;
+    background-color: black;
 }
 
 .about__info{
     margin-top: 10vh;
+    font-size: 20px;
+}
+
+.about__info-header{
+    background-color: #242424;
+    color: #595959;
+    padding: 15px 0px 15px 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.about__info-text{
+    background-color: black;
+    border: 2px solid #242424;
+    border-radius: 0px 0px 20px 20px;
+    padding: 2vh 1vw 8vh 1vw;
+    line-height: 150%;
+}
+
+@keyframes about__animation {
+    from {color: rgb(255, 255, 255);}
+    to {color: rgb(110, 110, 110)}
+}
+
+.about__anim1{
+    animation-name: about__animation;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.about__anim2{
+    animation-name: about__animation;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.about__anim3{
+    animation-name: about__animation;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
