@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: Consolas;
-    src: url(/fonts/consolas.ttf);
+    src: url(fonts/consolas.ttf);
 }
 
 .head{
@@ -53,7 +53,7 @@
 .intro{
     width: 1920px;
     height: 1031px;
-    background-image: url(/img/intro_bg.png);
+    background-image: url(../img/intro_bg.png);
     display: flex;
     flex-direction: column;
     gap: 38px;
@@ -94,7 +94,7 @@
     color: white;
     width: 1922px;
     height: 1912.02;
-    background-image: url(/img/about_bg.png);
+    background-image: url(../img/about_bg.png);
 }
 
 .about__person{
