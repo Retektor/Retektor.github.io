@@ -10,7 +10,7 @@
 }
 
 .head{
-    width: 100%;
+    width: auto;
     height: 80px;
     background-color: black;
     display: flex;
@@ -52,7 +52,6 @@
     animation-name: header__list-animation;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    animation-direction: alternate;
 }
 
 .inf__list-line{
@@ -66,9 +65,11 @@
 }
 
 .intro{
-    width: 1920px;
+    width: auto;
     height: 1031px;
     background-image: url(../img/intro_bg.png);
+    overflow: hidden;
+    background-repeat: none;
     display: flex;
     flex-direction: column;
     gap: 38px;
@@ -81,6 +82,29 @@
     background-color: #0B0B0B;
     padding: 5px 10px 5px 10px;
     font-size: 32px;
+}
+
+.intro__text h3{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 1s steps(14, end);
+}
+
+.intro__text p{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typewriter 1.5s steps(25, end) 1s;
+    animation-fill-mode: backwards;
+}
+
+@keyframes typewriter {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@keyframes intro__console-animation {
+    from {color: rgb(167, 167, 167);}
+    to {color: rgb(46, 46, 46);}
 }
 
 .intro__console{
@@ -97,18 +121,12 @@
     animation-delay: 0.5s;
     animation-timing-function: ease-in-out;
 
-    transition: 1s;
-    transition-delay: 0.1s;
+    transition: 0.5s;
     transition-timing-function: ease-in-out;
 }
 
 .intro__logo:hover{
     scale: 125%;
-}
-
-@keyframes intro__console-animation {
-    from {color: rgb(167, 167, 167);}
-    to {color: rgb(46, 46, 46);}
 }
 
 @keyframes intro__logo-start {
@@ -118,7 +136,7 @@
 
 .about{
     color: white;
-    width: 1922px;
+    width: auto;
     height: 1912.02;
     background-image: url(../img/about_bg.png);
     background-color: black;
@@ -156,7 +174,7 @@
 }
 
 .about__block-image{
-    border: 5px solid black;
+    /* border: 5px solid black; */
     background-color: black;
 }
 
@@ -207,4 +225,87 @@
     animation-delay: 1s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+.projects{
+    width: auto;
+    background-color: black;
+    color: white;
+    background-image: url(../img/projects_bg.png);
+}
+
+.projects__header{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+    margin-bottom: 5vh;
+}
+
+.projects__content{
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 38px;
+}
+
+.projects__block{
+    width: 1142px;
+    margin: 0 auto;
+    background-color: #363636;
+    display: flex;
+    gap: 5px;
+    border-radius: 20px;
+}
+
+.projects__block-circle{
+    margin: 22px 5px 0px 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    animation-name: circle-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    border: 2px solid white;
+}
+
+.projects__block-text{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 1043px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.projects__block-text h4{
+    font-size: 24px;
+}
+
+@keyframes circle-animation {
+    0% {background-color: white;}
+    33% {background-color: #207800;}
+    66% {background-color: #a107af;}
+    100% {background-color: white;}
+}
+
+.projects__text-gray{
+    color: rgb(161, 161, 161);
+}
+
+.animate-result{
+    animation-name: animate-result;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+@keyframes animate-result{
+    from, to{
+        color: white;
+    }
+    25%, 75%{
+        color: #51f017;
+    }
 }
