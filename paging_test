@@ -15,6 +15,12 @@ def auth():
 def register():
     return render_template('register.html')
 
+
+# Найти способ, как брать из БД строчки, ориентируясь на переменную <page>
+# Взять всю БД, срезом вывести только первые Х записей
+
+# Как создать количество страниц (кнопки) в зависимости от количества записей?
+
 @app.route('/eventslist/<page>')
 def show_events(page):
     conn = sqlite3.connect('database.db')
