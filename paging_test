@@ -1,0 +1,29 @@
+from flask import Flask, render_template
+import sqlite3
+
+app = Flask(__name__, static_folder='static', template_folder='templates')
+
+@app.route('/home')
+def home():
+    return render_template('index.html')
+
+@app.route('/auth')
+def auth():
+    return render_template('auth.html')
+
+@app.route('/register')
+def register():
+    return render_template('register.html')
+
+@app.route('/eventslist/<page>')
+def show_events(page):
+    conn = sqlite3.connect('database.db')
+    cursor = conn.cursor()
+    
+    cursor.execute("SELECT * FROM events")
+    events = cursor.fetchmany(20)
+    
+    return render_template('eventslist.html', events=events)
+
+if __name__ == '__main__':
+    app.run(debug=True)
