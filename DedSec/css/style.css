@@ -395,8 +395,9 @@
 
 .contacts {
   background-image: url(../img/Contact.png);
-  width: 100%;
-  height: 1000px;
+  width: auto;
+  height: auto;
+
 }
 .contacts-blocks {
   display: flex;
@@ -422,6 +423,7 @@
   color: #595959;
   font-size: 32px;
 }
+
 .contacts__info-text {
   background-color: black;
   border: 2px solid #242424;
@@ -432,11 +434,14 @@
   color: white;
   font-size: 26px;
 }
+
 .contacts__info {
-  width: 468px;
-  height: 486px;
+  width: auto;
+  height: auto;
   margin-top: 154px;
+  margin-bottom: 25px;
 }
+
 .contacts_card {
   background-image: linear-gradient(to bottom, #443141, #571162);
   width: 383px;
@@ -445,12 +450,14 @@
   margin-top: 59px;
   display: block;
 }
+
 .contacts_card-image {
   display: flex;
   justify-content: center;
   margin-top: 33px;
   border-radius: 30px;
 }
+
 .contacts_card p {
   text-align: center;
   margin-top: 18px;
@@ -459,6 +466,7 @@
   font-size: 32px;
   color: #fff;
 }
+
 .contacts-info-card {
   display: flex;
   gap: 20px;
@@ -467,6 +475,7 @@
 .contacts_card:hover {
   border: 1.5px solid #c75ac7;
 }
+
 footer {
   display: flex;
   width: 100%;
@@ -475,20 +484,23 @@ footer {
   font-family: Consolas;
   gap: 165px;
 }
-.block1 {
+
+.block1{
   margin-left: 83px;
   margin-top: 30px;
   font-weight: bold;
   font-size: 24px;
   color: #666666;
 }
-.block1 p a {
+
+.block1 p a{
   display: flex;
   justify-content: center;
   text-align: center;
   margin-top: 27px;
   line-height: 10px;
 }
+
 .block2 {
   margin-top: 30px;
   font-weight: bold;
@@ -496,16 +508,19 @@ footer {
   color: #666666;
   text-align: center;
 }
+
 .block2 hr {
   border: 2px solid #666;
   margin-top: 14px;
 }
+
 .block2 h4 {
   font-size: 20px;
   margin-top: 44px;
   display: flex;
   justify-content: center;
 }
+
 .block3 {
   margin-right: 83px;
   margin-top: 30px;
@@ -513,15 +528,18 @@ footer {
   font-size: 24px;
   color: #666666;
 }
+
 .block3 h4 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 footer a {
   text-decoration: none;
   color: #666666;
 }
+
 footer a:hover {
   color: #858484;
 }
