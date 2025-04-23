@@ -218,5 +218,34 @@ header{
     font-family: DM_Sans-Regular;
     font-size: 12px;
     line-height: 150%;
+}
 
+.block3__sqr{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.block3__sqr_square{
+    width: 15px;
+    height: 15px;
+    background-color: #D2345C;
+}
+
+.block3__sqr_txt{
+    font-family: DM_Sans-Medium;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.block3_head_hdr{
+    font-family: DM_Sans-Bold;
+    font-size: 48px;
+    line-height: 110%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 639px;
+    text-align: center;
 }
