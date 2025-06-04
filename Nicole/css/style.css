@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url(../fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-Italic;
+    src: url(../fonts/Montserrat-Italic.ttf);
+}
+
+@font-face {
+    font-family: Montserrat-LightItalic;
+    src: url(../fonts/Montserrat-LightItalic.ttf);
+}
+
+@font-face {
+    font-family: Inspiration-Regular;
+    src: url(../fonts/Inspiration-Regular.ttf);
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background-image: linear-gradient(to right, #F6F5EE, #EBE9E0);
+}
+
+.header__contents{
+    height: 100%;
+    display: flex;
+    margin: 0px 213px 0px 128px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: Montserrat-Bold;
+    font-size: 24px;
+}
+
+.menu nav{
+    display: flex;
+    gap: 50px;
+}
+
+.menu nav a{
+    font-family: Montserrat-Medium;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    gap: 50px;
+}
+
+
+.block1{
+    margin: 65px 213px 0px 68px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.block1__left{
+    width: 938px;
+    height: 688px;
+}
+
+.block1__header{
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat-Medium;
+    font-size: 40px;
+}
+
+.block1__quoteblock{
+    display: flex;
+    height: 100%;
+}
+
+.quoteblock__quote{
+    font-family: Montserrat-LightItalic;
+    font-size: 24px;
+    line-height: 34px;
+    display: flex;
+    align-items: center;
+    font-weight: lighter;
+    text-align: center;
+}
+
+.quoteblock__mark1{
+    font-family: Montserrat-Light;
+    font-size: 128px;
+    text-align: start;
+    height: 100%;
+}
+
+.quoteblock__mark2{
+    font-family: Montserrat-Light;
+    font-size: 128px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+}
+
+.block1__right{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.block1__line{
+    width: 436px;
+    display: flex;
+    justify-content: center;
+}
+
+.ellipse{
+    position: absolute;
+    top: 55vh;
+    z-index: -1;
+}
+
+.BlueLine{
+    position: absolute;
+    top: 103vh;
+    width: 100%;
+}
+
+.block2__header{
+    font-family: Montserrat-Medium;
+    font-size: 40px;
+    margin-top: 160px;
+    display: flex;
+    justify-content: center;
+}
+
+.BlueLine2 {
+    display: flex;
+    justify-content: center;
+}
+
+.block2__list{
+    margin-top: 74px;  
+    display: flex;
+    flex-direction: column;
+    gap: 25px; 
+}
+
+.list__btn {
+    display: flex;
+    justify-content: center;
+}
+
+.list__btn a{
+    text-decoration: none;
+}
+
+.list__btn button{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: Montserrat-Regular;
+    font-size: 24px;
+    padding: 30px 100px 30px 100px;
+    cursor: pointer;
+    background-color: rgba(255, 246, 238, 0.5);
+    border: 1px solid #F9AB2D;
+    width: 540px;
+}
+
+.list__btn button:hover{
+    background-color: rgba(255, 227, 204, 0.5);
+}
+
+.block3 {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.block3__header{
+    margin: 100px 0px 0px 0px;
+    font-family: Montserrat-Medium;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.block3__card{
+    width: 1384px;
+    height: auto;
+    padding: 50px 0px 50px 0px;
+    background-color: #F5F4EF;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.card__count{
+    font-family: Inspiration-Regular;
+    font-size: 196px;
+}
+
+.card__poemblock-orange {
+    padding: 25px 50px 50px 50px;
+    width: 488px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: white;
+    border: 2px solid #F9AB2D;
+    border-radius: 10px;
+}
+
+.card__poemblock-blue{
+    padding: 25px 50px 50px 50px;
+    width: 488px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: white;
+    border: 2px solid #3483C4;
+    border-radius: 10px;
+}
+
+.card__header{
+    font-family: Montserrat-Bold;
+    font-size: 40px;
+}
+
+.card__poem{
+    font-family: Montserrat-Italic;
+    font-size: 20px;
+}
+
+.footer {
+    background-color: #505050;
+    color: white;
+    width: 100%;
+}
+
+.footer__upper {
+    padding: 50px 376px 0px 128px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__name {
+    font-family: Montserrat-Bold;
+    font-size: 24px;
+}
+
+.footer__anchors nav{
+    font-family: Montserrat-Medium;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer__anchors nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer__jurisdiction {
+    font-family: Montserrat-Bold;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 0px 25px 0px;
+}
