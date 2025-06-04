@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter_18pt-Regular.ttf);
+}
+
+@font-face {
+    font-family: Fastlynk;
+    src: url(../fonts/Fastlynk.ttf);
+}
+
+@font-face {
+    font-family: Stormlight;
+    src: url(../fonts/Stormlight.ttf);
+}
+
+@font-face {
+    font-family: Pineforest;
+    src: url(../fonts/Pineforest.ttf);
+}
+
+@font-face {
+    font-family: Keway;
+    src: url(../fonts/KewayPersonalUse.otf);
+}
+
+@font-face {
+    font-family: Buwah;
+    src: url(../fonts/Buwahpersonaluse.otf);
+}
+
+@font-face {
+    font-family: Lalezar;
+    src: url(../fonts/Lalezar-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-VariableFont_wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Regular.ttf);
+}
+
+.header {
+    height: 105px;
+    background-color: #060215;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 130px 0px 76px;
+}
+
+.header nav{
+    display: flex;
+    gap: 39px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.header nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.nav__menu a{
+    display: flex;
+    gap: 4px;
+}
+
+.nav__buttons{
+    display: flex;
+    gap: 39px;
+}
+
+.nav__sign-in{
+    width: 180px;
+    height: 43px;
+    background-image: linear-gradient(to right, #D31027, #EA384D);
+    border: 2px solid #00000036;
+    border-radius: 100px;
+    color: white;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav__sign-in{
+    cursor: pointer;
+}
+
+.block1__background{
+    background-image: url(../img/apexlegends.png);
+    width: calc(1920px - 15);
+    height: 1124px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block1__text1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 768px 0px 151px;
+    padding: 191px 0px 0px 0px;
+}
+
+.block1__text2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 18.55px 768px 0px 151px;
+}
+
+.block1__label1{
+    font-family: Fastlynk;
+    font-size: 132.88px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    -webkit-text-fill-color: #EE0979;
+    -webkit-text-stroke: 2.46px #FFFFFF;
+}
+
+.block1__label2{
+    font-family: Stormlight;
+    font-size: 44.78px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 13%;
+    -webkit-text-fill-color: #FF6A00;
+    -webkit-text-stroke: 0.83px #FFFFFF;
+}
+
+.block1__label3{
+    color: #FFD644;
+    font-family: Pineforest;
+    font-size: 70.87px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 13%;
+}
+
+.block1__label4{
+    color: #FFD644;
+    font-family: Pineforest;
+    font-size: 32.04px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 13%;
+}
+
+.block1__description{
+    width: 563px;
+    color: #FFFFFF;
+    margin: 18.7px 747px 0px 130px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.block1__button{
+    color: #FFFFFF;
+    margin: 46px 747px 0px 130px;
+    width: 180px;
+    height: 47px;
+    background-image: linear-gradient(to right, #D31027, #EA384D);
+    border: 2px solid #00000036;
+    border-radius: 100px;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0%;
+    cursor: pointer;
+}
+
+.block2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #060215;
+    padding-top: 40px;
+    padding-bottom: 38.15px;
+}
+
+.BlackForBloood{
+    width: 90px;
+    height: 102px;
+    text-align: center;
+
+    font-family: Keway;
+    font-size: 34px;
+    margin-left: 5px;
+    margin-top: -152px;
+    color: #D31027;
+}
+.pravka{
+    font-family: Inter;
+}
+.LordsOfTheFallen{
+    width: 193px;
+    height: 58px;
+    font-size: 29px;
+    font-family: Buwah;
+    color: #F5AC7C;
+    margin-left: 57px;
+    margin-top: -90px;  
+    text-align: center;  
+}
+.APEXLegends{
+    width: 100%;
+    margin-top: 419px;
+    font-family: Fastlynk;
+    font-size: 66px;
+    color: #EE0979;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pravka1{
+    font-family: Stormlight;
+    font-size: 23px;
+    line-height: 24px;
+}
+
+#block2__apex{
+    background-image: url(../img/apexlegends2.png);
+    width: 380px;
+    height: 543px;
+}
+
+#block2__hogwarts{
+    background-image: url(../img/hogwartslegacy.png);
+    width: 306px;
+    height: 437px;
+}
+
+#hogwarts__label {
+    display: flex;
+    padding: 325px 0px 30.3px 65.31px;
+}
+
+#block2__horizon {
+    background-image: url(../img/Horizon.png);
+    width: 204px;
+    height: 436px;
+}
+
+#horizon__label{
+    position: relative;
+    top: 354px;
+    left: 70px;
+}
+
+.block3{
+    width: 100%;
+    background-image: linear-gradient(105deg, #E5019F, #6772D1, #7774FF);
+    display: flex;
+    gap: 415.17px;
+}
+
+.block3__left{
+    width: 638px;
+    margin: 150px 0px 0px 130px;
+}
+
+.left__label{
+    color: hsla(0, 0%, 100%, 0.72);
+    -webkit-text-stroke: 2px hsla(0, 0%, 100%, 1);
+    font-family: Lalezar;
+    font-size: 115.79px;
+    font-weight: 400;
+    line-height: 99.6px;
+    letter-spacing: 0%;
+}
+
+.left__description{
+    color: hsla(0, 0%, 100%, 0.87);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.left__button{
+    width: 200px;
+    height: 51px;
+    background-color: hsla(226, 90%, 69%, 1);
+    border: 1px solid hsla(0, 0%, 100%, 0.35);
+    border-radius: 100px;
+    cursor: pointer;
+    margin: 47px 0px 0px 0px;
+    /* Button text */
+    color: hsla(0, 0%, 100%, 1);
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    box-shadow: 0px 4px 4px hsla(0, 0%, 0%, 0.18);
+}
+
+.playstation{
+    rotate: 3.02deg;
+}
+
+.block4{
+    width: 100%;
+    background-image: url(../img/block4-background.png);
+    background-repeat: no-repeat;
+    background-color: #060215;
+    color: white;
+}
+
+.block4__label{
+    width: 584px;
+    padding: 64px 0px 0px 176.75px;
+    font-family: Inter;
+    font-size: 41.34px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: hsla(0, 0%, 100%, 0.8);
+}
+
+.block4__label_big{
+    font-family: Inter;
+    font-size: 66.25px;
+    font-weight: 800;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: hsla(0, 0%, 100%, 0.8);
+}
+
+.block4__description{
+    margin: 0px 0px 0px 176.75px;
+    margin-top: 10.75px;
+    width: 653.75px;
+    font-family: Inter;
+    font-size: 25.52px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.block4__button{
+    width: 180px;
+    height: 47px;
+    margin: 0px 0px 0px 176.75px;
+    margin-top: 30.25px;
+    border: 2px solid hsla(0, 0%, 0%, 0.21);
+    border-radius: 100px;
+    background-image: linear-gradient(to right, hsla(353, 86%, 45%, 1), hsla(353, 81%, 57%, 1));
+    cursor: pointer;
+    /* Button text */
+    color: white;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.block4__gallery{
+    margin-top: 387px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 88px;
+}
+
+.block4__card p{
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+.newsletter{
+    height: 188px;
+    background-image: linear-gradient(to right, #D31027, #EA384D);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 75px 0px 135px;
+}
+
+.newsletter__text{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    /* Text */
+    color: white;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0%;
+}
+
+.newsletter__field{
+    width: 592px;
+    height: 49px;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.newsletter__field input{
+    height: 36px;
+    width: 55%;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    /* Text */
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.newsletter__field input:focus{
+    border: none;
+}
+
+.newsletter__field button{
+    background-image: linear-gradient(to right, #D31027, #EA384D);
+    width: 113.66px;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+    /* Text */
+    color: #FFFFFF;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.footer{
+    background-color: #060215;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 66px 152px 152px 88px;
+}
+
+.footer__list{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer__list h6{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer__list p{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.footer__list a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer__socials{
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.footer__socials h6{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.footer__socials p{
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.socials {
+    display: flex;
+    gap: 14px;
+    margin-top: 20px;
+}
